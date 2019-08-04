@@ -1,0 +1,20 @@
+.search {
+    width: 100%;
+    line-height: 30px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    flex-direction: row wrap;
+
+    &__input {
+        margin: 5px;
+        height: 30px;
+        width: 80%;
+        vertical-align: middle;
+    }
+
+    &__icon {
+        vertical-align: middle;
+        width: 14px;
+        margin: 10px;
+    }
+}

@@ -1,27 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import {Provider} from 'react-redux';
 import configureStore from './store/store';
-import './App.css';
+import Header from './components/Header';
+import RecipeItem from './components/RecipeItem';
 
 function App() {
+  const item = { title: "Vegetable-Pasta Oven Omelet",
+                  href: "http://find.myrecipes.com/recipes/recipefinder.dyn?action=displayRecipe&recipe_id=520763",
+                  ingredients: "tomato, onions, red pepper, garlic, olive oil, zucchini, cream cheese, vermicelli, eggs, parmesan cheese, milk, italian seasoning, salt, black pepper",
+                  thumbnail: "http://img.recipepuppy.com/560556.jpg"};
   return (
     <Provider store={configureStore()}>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header className="App-header"/>
+        <RecipeItem item={item}/>
       </div>
     </Provider>
   );
