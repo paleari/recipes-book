@@ -1,0 +1,15 @@
+.recipe_list {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    position: relative;
+    padding-top: 80px;
+    
+    @media screen and (min-width:769px) {
+        flex-flow: row wrap;
+        align-content: space-around;
+        justify-content: center;
+    }
+}
