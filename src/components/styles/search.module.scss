@@ -4,21 +4,40 @@
     background-color: white;
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
-    box-shadow: gray;
-    flex-direction: row wrap;
+    box-shadow: 0 1px 3px 0 lightgrey;
+    position: relative;
+    padding: 8px;
 
-    &__input {
-        margin: 5px;
+    &__input_parent {
         height: 30px;
-        width: 80%;
+        width: 90%;
         vertical-align: middle;
         border-radius: 18px;
         border: 1px solid lightgray;
+        padding: 9px 0 0 0;
+        position: relative;
+    }
+
+    &__input {
+        position: absolute;
+        border: unset;
+        border-left: 1px solid lightgray;
+        height: 90%;
+        width: 80%;
+        left: 2.5rem;
+        bottom: 1px;
+        padding-left: 8px;
+        vertical-align: middle;
+        font-size: 12pt;
+        color: grey;
     }
 
     &__icon {
+        position: absolute;
+        top: 33%;
+        left: 14px;
+        opacity: 0.5;
         vertical-align: middle;
         width: 16px;
-        margin: 10px;
     }
 }

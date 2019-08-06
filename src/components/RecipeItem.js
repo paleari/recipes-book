@@ -6,34 +6,34 @@ const getIngredientsList = (ingredients) => (
     ingredients
     .split(",")
     .map((ingredient, index) => 
-        <li key={index+ingredient}>
+        <li key={index+ingredient} className={styles.recipe__ingredient}>
             {ingredient}
         </li>
     )
 );
 
-const hasLactose = (ingredients) => ingredients.match(/milk|cheese/i);
+const checkLactose = (ingredients) => ingredients.match(/milk|cheese/i);
 
 const RecipeItem = ({item}) => (
-    <div className={styles.recipe}>
+    <>
         <a href={item.href} className={styles.recipe__a}>
             <div className={styles.recipe__image_wrapper}>
-               {hasLactose(item.ingredients) &&
-                 <span className={styles.recipe__label}>{texts.LABEL_LACTOSE}</span>
-               }
+                {checkLactose(item.ingredients) &&
+                    <span className={styles.recipe__label}>{texts.LABEL_LACTOSE}</span>
+                }
                 <img className={styles.recipe__image} alt={"Recipe"} src={item.thumbnail}/>
             </div>
-            <span className={styles.recipe__title}>
-                {item.title}        
-                <button className={styles.recipe__button}>
+            <div className={styles.recipe__title}>
+                {item.title}   
+            </div>     
+            <button className={styles.recipe__button}>
                     {texts.BUTTON_FAVORITE}
-                </button>
-            </span>
-            <ul>
+            </button>
+            <ul className={styles.recipe__ingredients}>
                 {getIngredientsList(item.ingredients)}
             </ul>
         </a>
-    </div>
+    </>
 )
 
 export default RecipeItem;

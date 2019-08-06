@@ -6,10 +6,26 @@
     background-color: #f5f5f5;
     position: relative;
     padding-top: 80px;
-    
+    padding-inline-start: unset;
+
     @media screen and (min-width:769px) {
         flex-flow: row wrap;
         align-content: space-around;
         justify-content: center;
+    }
+
+    &__item {    
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid #e6e6e6;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 1px 2px 0 lightgrey;
+        list-style-type: none;
+
+        @media screen and (min-width:769px) {
+            width: 40%;
+            margin: 20px;
+        }
     }
 }

@@ -1,6 +1,5 @@
 const texts = {
-    TITLE_HEADER: "Recipes",
-    TITLE_SEARCH: "Search",
+    TITLE_HEADER: "Recipes Book",
     LABEL_LACTOSE: "Has Lactose",
     BUTTON_FAVORITE: "Make Favorite",
 };
