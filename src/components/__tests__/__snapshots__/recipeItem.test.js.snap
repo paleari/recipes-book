@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeItem Component should render correctly 1`] = `
+<a
+  className="recipe__a"
+  href="http://find.myrecipes.com/recipes/recipefinder.dyn?action=displayRecipe&recipe_id=520763"
+>
+  <div
+    className="recipe__image_wrapper"
+  >
+    <span
+      className="recipe__label"
+    >
+      Has Lactose
+    </span>
+    <img
+      alt="Recipe"
+      className="recipe__image"
+      src="http://img.recipepuppy.com/560556.jpg"
+    />
+  </div>
+  <div
+    className="recipe__title"
+  >
+    Vegetable-Pasta Oven Omelet
+  </div>
+  <button
+    className="recipe__button"
+  >
+    Make Favorite
+  </button>
+  <ul
+    className="recipe__ingredients"
+  >
+    <li
+      className="recipe__ingredient"
+    >
+      tomato
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       onions
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       red pepper
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       garlic
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       olive oil
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       zucchini
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       cream cheese
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       vermicelli
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       eggs
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       parmesan cheese
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       milk
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       italian seasoning
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       salt
+    </li>
+    <li
+      className="recipe__ingredient"
+    >
+       black pepper
+    </li>
+  </ul>
+</a>
+`;

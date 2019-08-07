@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import {getRecipes} from '../store/ducks/recipesDuck';
 import styles from './styles/search.module.scss';
 import {ReactComponent as IconSearch} from '../static/icons/search.svg';
 
-const Search = ({submit}) => {
+export const Search = ({submit}) => {
 
-    const [search, setSearch] = useState("");
+    const [search, setSearch] = React.useState("");
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,10 +17,11 @@ const Search = ({submit}) => {
 
     return (
         <div className={styles.search}>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id='searchForm'>
                 <div className={styles.search__input_parent}>
                     <IconSearch className={styles.search__icon}/>
                     <input
+                        id='searchInput'
                         className={styles.search__input}
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}

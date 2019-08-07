@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Component should render correctly 1`] = `
+<div
+  className="search"
+>
+  <form
+    id="searchForm"
+    onSubmit={[Function]}
+  >
+    <div
+      className="search__input_parent"
+    >
+      <svg
+        className="search__icon"
+      >
+        search.svg
+      </svg>
+      <input
+        className="search__input"
+        id="searchInput"
+        onChange={[Function]}
+        value=""
+      />
+    </div>
+  </form>
+</div>
+`;
