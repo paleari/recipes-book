@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeList Component should render correctly 1`] = `
+<ul
+  className="recipe_list"
+>
+  <li
+    className="recipe_list__item"
+  >
+    <a
+      className="recipe__a"
+      href="http://www.bigoven.com/43919-Roasted-Pepper-and-Bacon-Omelet-recipe.html"
+    >
+      <div
+        className="recipe__image_wrapper"
+      >
+        <img
+          alt="Recipe"
+          className="recipe__image"
+          src=""
+        />
+      </div>
+      <div
+        className="recipe__title"
+      >
+        Roasted Pepper and Bacon Omelet
+      </div>
+      <button
+        className="recipe__button"
+      >
+        Make Favorite
+      </button>
+      <ul
+        className="recipe__ingredients"
+      >
+        <li
+          className="recipe__ingredient"
+        >
+          eggs
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           salt
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           black pepper
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           butter
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           black pepper
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           bacon
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           onions
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           garlic
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           roasted red peppers
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           oregano
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           black pepper
+        </li>
+      </ul>
+    </a>
+  </li>
+  <li
+    className="recipe_list__item"
+  >
+    <a
+      className="recipe__a"
+      href="http://cookeatshare.com/recipes/broccoli-oven-omelet-92851"
+    >
+      <div
+        className="recipe__image_wrapper"
+      >
+        <span
+          className="recipe__label"
+        >
+          Has Lactose
+        </span>
+        <img
+          alt="Recipe"
+          className="recipe__image"
+          src=""
+        />
+      </div>
+      <div
+        className="recipe__title"
+      >
+         Broccoli Oven Omelet Recipe 
+      </div>
+      <button
+        className="recipe__button"
+      >
+        Make Favorite
+      </button>
+      <ul
+        className="recipe__ingredients"
+      >
+        <li
+          className="recipe__ingredient"
+        >
+          eggs
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           broccoli
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           onions
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           parmesan cheese
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           lowfat milk
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           salt
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           basil
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           garlic
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           tomato
+        </li>
+        <li
+          className="recipe__ingredient"
+        >
+           parmesan cheese
+        </li>
+      </ul>
+    </a>
+  </li>
+</ul>
+`;

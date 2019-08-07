@@ -1,4 +1,5 @@
 import { createDuck } from 'redux-duck';
+import { fecthRecipes } from '../../api/recipesApi';
 
 const recipesDuck = createDuck('recipes', 'recipes-book');
 
@@ -13,12 +14,8 @@ export const recipesSelector = (state) => state.recipes;
 export const getRecipes = (search) => async dispatch => {
     dispatch(requestRecipesAction);
     try {
-        const proxyurl = "https://cors-anywhere.herokuapp.com/";
-        const url = `http://www.recipepuppy.com/api/?q=${search}`;
-        const data = await fetch(proxyurl + url).then(response => {
-            return response.json()
-          });
-        dispatch(responseRecipesAction(data.results));
+        const data = await fecthRecipes(search);
+        dispatch(responseRecipesAction(data));
     } catch(e) {
         console.log('something went wrong: ', e);
     }

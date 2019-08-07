@@ -40,67 +40,12 @@ exports[`RecipeItem Component should render correctly 1`] = `
     <li
       className="recipe__ingredient"
     >
-       onions
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       red pepper
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       garlic
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       olive oil
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       zucchini
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       cream cheese
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       vermicelli
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       eggs
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       parmesan cheese
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
        milk
     </li>
     <li
       className="recipe__ingredient"
     >
-       italian seasoning
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       salt
-    </li>
-    <li
-      className="recipe__ingredient"
-    >
-       black pepper
+       red pepper
     </li>
   </ul>
 </a>
