@@ -12,7 +12,7 @@ const responseRecipesAction = recipesDuck.createAction(RESPONSE_RECIPES);
 export const recipesSelector = (state) => state.recipes;
 
 export const getRecipes = (search) => async dispatch => {
-    dispatch(requestRecipesAction);
+    dispatch(requestRecipesAction());
     try {
         const data = await fecthRecipes(search);
         dispatch(responseRecipesAction(data));
