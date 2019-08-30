@@ -40,12 +40,12 @@ exports[`RecipeItem Component should render correctly 1`] = `
     <li
       className="recipe__ingredient"
     >
-       milk
+      milk
     </li>
     <li
       className="recipe__ingredient"
     >
-       red pepper
+      red pepper
     </li>
   </ul>
 </a>

@@ -29,20 +29,11 @@ describe('RecipeItem Component', () => {
     it('should contain a list of ingredients', () => {
         expect(wrapper.find("li")).toHaveLength(3);
         expect(wrapper.find("li").get(0).props.children).toEqual('tomato');
-        expect(wrapper.find("li").get(1).props.children).toEqual(' milk');
-        expect(wrapper.find("li").get(2).props.children).toEqual(' red pepper');
+        expect(wrapper.find("li").get(1).props.children).toEqual('milk');
+        expect(wrapper.find("li").get(2).props.children).toEqual('red pepper');
     })
 
     it('should contain lactose label if ingredients contain milk or cheese', () => {
-        expect(wrapper.find(".recipe__label")).toHaveLength(1);
-
-        item = {
-            title: "Vegetable-Pasta Oven Omelet",
-            href: "http://find.myrecipes.com/recipes/recipefinder.dyn?action=displayRecipe&recipe_id=520763",
-            ingredients: "tomato, cheese, red pepper",
-            thumbnail: "http://img.recipepuppy.com/560556.jpg"
-            };
-
         expect(wrapper.find(".recipe__label")).toHaveLength(1);
     })
 
@@ -59,6 +50,15 @@ describe('RecipeItem Component', () => {
     })
 
     it('should not contain lactose label', () => {
+        item = {
+            title: "Vegetable-Pasta Oven Omelet",
+            href: "http://find.myrecipes.com/recipes/recipefinder.dyn?action=displayRecipe&recipe_id=520763",
+            ingredients: "tomato, cheese, red pepper",
+            thumbnail: "http://img.recipepuppy.com/560556.jpg"
+            };
+
+        wrapper = shallow(<RecipeItem item={item}/>);
+
         expect(wrapper).not.toContain(".recipe__label");
     })
 

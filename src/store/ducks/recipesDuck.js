@@ -21,9 +21,9 @@ export const getRecipes = (search) => async dispatch => {
     }
 }
 
-export const intialState = [];
+export const initialState = [];
 
 export const recipes = recipesDuck.createReducer({
-    [REQUEST_RECIPES]: () => intialState,
+    [REQUEST_RECIPES]: () => initialState,
     [RESPONSE_RECIPES]: (_, action) => action.payload
-}, intialState);
+}, initialState);

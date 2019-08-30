@@ -1,14 +1,11 @@
 import { createStore, applyMiddleware } from 'redux';
-import { recipes } from './ducks/recipesDuck';
-import { combineReducers } from 'redux';
+import reducer, {initialState} from './ducks';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
-const initialState = {recipes: []};
-
 export default function configureStore(){
     return createStore(
-        combineReducers({recipes}), 
+        reducer, 
         initialState, 
         composeWithDevTools(applyMiddleware(thunk)));
 }

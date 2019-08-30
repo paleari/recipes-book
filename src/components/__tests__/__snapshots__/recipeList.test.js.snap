@@ -41,52 +41,52 @@ exports[`RecipeList Component should render correctly 1`] = `
         <li
           className="recipe__ingredient"
         >
-           salt
+          salt
         </li>
         <li
           className="recipe__ingredient"
         >
-           black pepper
+          black pepper
         </li>
         <li
           className="recipe__ingredient"
         >
-           butter
+          butter
         </li>
         <li
           className="recipe__ingredient"
         >
-           black pepper
+          black pepper
         </li>
         <li
           className="recipe__ingredient"
         >
-           bacon
+          bacon
         </li>
         <li
           className="recipe__ingredient"
         >
-           onions
+          onions
         </li>
         <li
           className="recipe__ingredient"
         >
-           garlic
+          garlic
         </li>
         <li
           className="recipe__ingredient"
         >
-           roasted red peppers
+          roasted red peppers
         </li>
         <li
           className="recipe__ingredient"
         >
-           oregano
+          oregano
         </li>
         <li
           className="recipe__ingredient"
         >
-           black pepper
+          black pepper
         </li>
       </ul>
     </a>
@@ -133,47 +133,47 @@ exports[`RecipeList Component should render correctly 1`] = `
         <li
           className="recipe__ingredient"
         >
-           broccoli
+          broccoli
         </li>
         <li
           className="recipe__ingredient"
         >
-           onions
+          onions
         </li>
         <li
           className="recipe__ingredient"
         >
-           parmesan cheese
+          parmesan cheese
         </li>
         <li
           className="recipe__ingredient"
         >
-           lowfat milk
+          lowfat milk
         </li>
         <li
           className="recipe__ingredient"
         >
-           salt
+          salt
         </li>
         <li
           className="recipe__ingredient"
         >
-           basil
+          basil
         </li>
         <li
           className="recipe__ingredient"
         >
-           garlic
+          garlic
         </li>
         <li
           className="recipe__ingredient"
         >
-           tomato
+          tomato
         </li>
         <li
           className="recipe__ingredient"
         >
-           parmesan cheese
+          parmesan cheese
         </li>
       </ul>
     </a>

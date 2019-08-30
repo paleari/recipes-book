@@ -7,7 +7,7 @@ const getIngredientsList = (ingredients) => (
     .split(",")
     .map((ingredient, index) => 
         <li key={index+ingredient} className={styles.recipe__ingredient}>
-            {ingredient}
+            {ingredient.trim()}
         </li>
     )
 );

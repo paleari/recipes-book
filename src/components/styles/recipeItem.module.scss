@@ -56,12 +56,12 @@
         list-style-type: none;
     }
 
-    li::first-letter{
-        text-transform: uppercase;
-    }
-
     &__ingredients {
         padding-inline-start: unset;
         margin: 8px;
+        
+        li::first-letter{
+            text-transform: uppercase;
+        }
     }
 }
